@@ -1,11 +1,13 @@
 import {Route, Routes} from "react-router-dom";
 import NotFoundPage from "./containers/NotFoundPage/NotFoundPage";
-import SearchForm from "./components/SearchForm/SearchForm";
+import SearchPage from "./containers/SearchPage/SearchPage";
+import MainPage from "./containers/MainPage/MainPage";
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<SearchForm/>}/>
+      <Route path="/" element={<MainPage/>}/>
+      <Route path="/search-city" element={<SearchPage/>}/>
       <Route path={"*"} element={<NotFoundPage/>}/>
     </Routes>
   );

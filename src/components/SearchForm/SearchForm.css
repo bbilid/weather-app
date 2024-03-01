@@ -1,0 +1,53 @@
+.ParentBlock {
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.FormBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.InputContainer {
+    width: 70%;
+}
+
+.Input {
+    padding: 5px 10px;
+    width: 100%;
+    color: #48484a;
+    font-family: Space Grotesk,Arial,sans-serif;
+    font-size: 14px;
+    height: 32px;
+    box-sizing: border-box;
+    outline: none;
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    border-radius: 20px 0 0 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.ButtonContainer {
+    width: 30%;
+}
+
+.Button {
+    background-color: #48484a;
+    border-color: #48484a;
+    color: #f2f2f2;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 0 20px 20px 0!important;
+    padding: 0 10px!important;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    height: 32px;
+    width: 100%;
+}
+
+.Button:hover {
+    background-color: rgba(72,72,74,.85);
+    border-color: rgba(72,72,74,.85);
+}
