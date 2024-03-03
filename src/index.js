@@ -6,6 +6,7 @@ import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import store from "./store/configureStore";
 import App from './App';
+import "./index.css";
 
 const app  = (
   <Provider store={store}>

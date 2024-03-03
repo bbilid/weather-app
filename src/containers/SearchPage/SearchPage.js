@@ -17,6 +17,8 @@ const SearchPage = () => {
 					  name={city.name}
 					  country={city.country}
 					  state={city.hasOwnProperty('state') && city.state}
+					  lat={city.lat}
+					  lon={city.lon}
 				  />
 			  ))
 			}

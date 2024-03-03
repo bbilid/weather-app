@@ -1,0 +1,70 @@
+.AppToolbar {
+    position: relative;
+}
+
+.AvatarContainer {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    padding: 20px 5px 0 15px;
+}
+
+.Avatar {
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.hiddenToolbar {
+    display: none;
+}
+
+.ToolbarContainer {
+    position: relative;
+    padding: 20px 5px;
+    border-radius: 40px;
+    background: #DEAB4D;
+}
+
+@media screen and (min-width: 900px) {
+    .ToolbarContainer {
+        width: 70px;
+        height: 480px;
+    }
+}
+
+.ToolbarItems {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: inherit;
+}
+
+.ToolbarItem {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.ToolbarItem:first-child {
+    margin-top: 0;
+}
+
+.weather,
+.explore,
+.cities,
+.settings {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.ToolName {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    margin: 5px 0;
+}

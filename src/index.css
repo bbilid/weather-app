@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #D69E36;
+}
+
+.Container {
+    max-width: 1250px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
