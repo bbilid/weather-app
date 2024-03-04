@@ -16,20 +16,30 @@
 }
 
 .hiddenToolbar {
-    display: none;
+    display: block!important;
 }
 
 .ToolbarContainer {
+    width: 70px;
+    height: 480px;
     position: relative;
     padding: 20px 5px;
     border-radius: 40px;
     background: #DEAB4D;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 800px) {
     .ToolbarContainer {
-        width: 70px;
-        height: 480px;
+        display: none;
+        width: 50px;
+        height: 460px;
+    }
+    .AvatarContainer {
+        padding: 20px 5px 0 5px;
+    }
+    .ToolName {
+        font-size: 12px!important;
+        font-weight: 400!important;
     }
 }
 

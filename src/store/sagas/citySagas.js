@@ -12,7 +12,9 @@ import {
 
 export function* fetchCitySaga({payload: city}) {
 	try {
-		const response = yield axiosApi.get(`/data/2.5/weather?lat=${city.lat}&lon=${city.lon}&appid=${openWeatherAPIKey}`);
+		const response = yield axiosApi.get(
+			`/data/2.5/weather?lat=${city.lat}&lon=${city.lon}&units=metric&appid=${openWeatherAPIKey}`
+		);
 		yield put(fetchCitySuccess(response.data));
 	} catch (error) {
 		yield put(fetchCityFailure(error.response.data));
