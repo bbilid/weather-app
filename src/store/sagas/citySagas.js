@@ -5,7 +5,7 @@ import {openWeatherAPIKey} from "../../config";
 import {
 	fetchCityFailure,
 	fetchCityRequest,
-	fetchCitySuccess,
+	fetchCitySuccess, hourForecastFailure, hourForecastRequest, hourForecastSuccess,
 	searchCityFailure, searchCityRequest,
 	searchCitySuccess
 } from "../actions/cityActions";
@@ -37,9 +37,21 @@ export function* searchCitySaga({payload: city}) {
 	}
 }
 
+export function* hourForecastSaga({payload: coordinates}) {
+	try {
+		const response = yield axiosApi.get(
+			`/data/2.5/forecast/?lat=${coordinates.lat}&lon=${coordinates.lon}&units=metric&appid=${openWeatherAPIKey}`
+		);
+		yield put(hourForecastSuccess(response.data.list));
+	} catch (error) {
+		yield put(hourForecastFailure(error.response.data));
+	}
+}
+
 const citySagas = [
 	takeEvery(fetchCityRequest, fetchCitySaga),
 	takeEvery(searchCityRequest, searchCitySaga),
+	takeEvery(hourForecastRequest, hourForecastSaga),
 ];
 
 export default citySagas;

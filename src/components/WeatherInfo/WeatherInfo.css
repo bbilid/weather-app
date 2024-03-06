@@ -1,13 +1,3 @@
-.LoadingContainer {
-    max-width: 50px;
-}
-
-.LoadingImg {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .InfoContainer {
     display: flex;
     flex-wrap: wrap;
@@ -19,10 +9,31 @@
     margin-bottom: 35px;
 }
 
-.WeatherIconContainer {
-    max-width: 280px;
-    max-height: 200px;
-    margin: 0 10px 0 auto;
+.ToolbarBlock {
+    width: 6%;
+}
+
+.MiddleBlocks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+.FiveDaysForeCast {
+    width: 20%;
+}
+
+.LocationPhotoContainer {
+    width: 100%;
+    background-color: #DEAB4D;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.HourForeCast {
+    width: 100%;
+    margin-bottom: 25px;
 }
 
 @media screen and (max-width: 800px) {
@@ -35,6 +46,19 @@
     .WeatherIconContainer {
         margin-bottom: 15px;
     }
+    .MiddleBlocks {
+        width: 100%;
+        flex-wrap: wrap-reverse!important;
+    }
+    .FiveDaysForeCast {
+        width: 100%;
+    }
+}
+
+.WeatherIconContainer {
+    max-width: 280px;
+    max-height: 200px;
+    margin: 0 10px 0 auto;
 }
 
 .VectorIcon {
@@ -86,6 +110,28 @@
     width: 100%;
     height: auto;
     display: block;
+}
+
+.PhotosBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.Heart {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.Title {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #ffffff;
 }
 
 

@@ -1,0 +1,22 @@
+.ForecastContainer {
+    background-color: #DEAB4D;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.ForecastContainer h5, p {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0;
+    text-align: left;
+    color: #ffffff;
+}
+
+.ForecastContainer h5 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.ForecastContainer p {
+    font-size: 16px;
+    font-weight: 400;
+}

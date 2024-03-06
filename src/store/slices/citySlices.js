@@ -7,10 +7,13 @@ const citySlices = createSlice({
 	initialState: {
 		city: {},
 		cities: [],
+		hourForecast: [],
 		fetchCityLoading: false,
 		fetchCityError: null,
 		searchCityLoading: false,
 		searchCityError: null,
+		hourForecastLoading: false,
+		hourForecastError: null,
 	},
 	reducers: {
 		fetchCityRequest(state){
@@ -35,6 +38,18 @@ const citySlices = createSlice({
 		},
 		searchCityFailure(state, action) {
 			state.searchCityError = action.payload;
+		},
+		hourForecastRequest(state) {
+			state.hourForecastLoading = true;
+		},
+		hourForecastSuccess(state, action) {
+			state.hourForecastLoading = false;
+			state.searchCityError = null;
+			state.hourForecast = action.payload;
+		},
+		hourForecastFailure(state, action) {
+			state.hourForecastLoading = false;
+			state.hourForecastError = action.payload;
 		},
 	},
 });

@@ -1,5 +1,6 @@
 .AppToolbar {
     position: relative;
+    width: 70px;
 }
 
 .AvatarContainer {
@@ -32,7 +33,7 @@
     .ToolbarContainer {
         display: none;
         width: 50px;
-        height: 460px;
+        height: 400px;
     }
     .AvatarContainer {
         padding: 20px 5px 0 5px;

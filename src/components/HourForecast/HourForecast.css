@@ -1,0 +1,25 @@
+.GraphContainer {
+    padding: 25px 25px 45px;
+}
+
+.HourForecastContainer {
+    background-color: #DEAB4D;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.TimeIcon {
+    width: 25px;
+    margin: 25px 10px 0 20px;
+}
+
+.HourTitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #ffffff;
+}
+
